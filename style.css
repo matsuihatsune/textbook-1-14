@@ -1,0 +1,378 @@
+!important
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Owald', sans-serif;
+}
+
+body{
+    width: 100%;
+    background: #f9f9f9;
+}
+
+.container{
+    width: 960px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.main-visual{
+    width: 100%;
+    height: 500px;
+    background: #fff url(hero.jpg) 0 0 no-repeat;
+    background-size: cover;
+    margin-bottom: 32px;
+    padding-top: 60px;
+}
+
+#header{
+    width: 100%;
+    overflow: hidden;
+    background: #e63c35;
+    padding: 6px 0px;
+    position: fixed;
+    z-index: 2;
+}
+
+#header h1{
+    float: left;
+    color: #f9f9f9;
+    margin-right: 48px;
+}
+
+nav{
+    overflow: hidden;
+}
+
+nav li{
+    list-style-type: none;
+    float: left;
+    margin-top: 2px;
+}
+
+nav h1{
+    font-size: 32px;
+    padding: 8px 16px;
+    color: #f9f9f9;
+    text-shadow:  1px 1px 1px #000;
+}
+
+nav a{
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    color: #f9f9f9;
+    margin: 14px 16px 0px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    border-bottom: 3px solid #f9f9f9;
+}
+
+.hero-img{
+    width: 100%;
+    height: 400px;
+    background: #fff url(hero.jpg) 0 0 no-repeat;
+    background-size: cover;
+    margin-bottom: 32px;
+}
+
+#main{
+    width: 608px;
+    float: left;
+    background: #fff;
+    padding: 16px;
+}
+
+.top-title{
+    font-size: 36px;
+    padding-left: 8px;
+    margin-bottom: 16px;
+    color: #555;
+    font-weight: 400;
+    border-left: 6px solid #e63c35;
+}
+
+p.new{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:#e63c35;
+    color: white;
+    text-align: center;
+    line-height: 65px;
+    font-size: 25px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.animation1{
+    position: relative;
+    width: 300px;
+    float: left;
+}
+
+#contents1 .animation1 .caption{
+   position: absolute;
+    padding: 20px;
+    background: #e63c35;
+    height: 169px;
+    width: 260px;
+}
+
+#contents1 .animation1 .caption h2{
+    color: white;
+    font-size: 13px;
+}
+
+#contents1 .animation1 .caption h3{
+    color: white;
+    font-size: 15px;
+}
+
+#contents1 .animation1:hover .caption{
+    -webkit-transform: translate(8px, 8px);
+    -ms-transform: translate(8px, 8px);
+    -o-transform:translate(8px, 8px);
+    transform:translate(8px, 8px);
+    
+    -webkit-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all o.3s;
+
+    opacity: 1;
+}
+
+.animation2{
+    position: relative;
+    width: 300px;
+    float: left;
+    
+    -moz-perspective:500;
+    -webkit-perspective:500;
+    -o-perspective:500;
+    -ms-perspective:500;
+    
+    -webkit-perspective-origin:left;
+    -moz-perspective-origin:left;
+    -o-perspective-origin:left;
+    -ms-perspective-origin:left;
+    perspective-origin:left;
+}
+
+#contents2 .animation2 .caption{
+    position: absolute;
+    padding: 20px;
+    background: #e63c35;
+    height: 185px;
+    width: 100px;
+    
+    opacity: 0;
+    
+    -webkit-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90ebg);
+    
+    
+        -webkit-transition: transform 0.4s, opacity 0.1s 0.3s;
+        -o-transition: transform 0.4s, opacity 0.1s 0.3s;
+        transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+#contents2 .animation2:hover .caption{
+    opacity: 1;
+    
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    
+    
+        -webkit-transition: transform 0.4s, opacity 0.1s;
+        -o-transition: transform 0.4s, opacity 0.1s;
+        transition: transform 0.4s, opacity 0.1s;
+    
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin:0 0;
+    -ms-transform-origin:0 0;
+    transform-origin:0 0;
+}
+
+#contents2 .animation2:hover{
+    -webkit-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    -o-transform: translateX(25%);
+    transform: translateX(25%);
+}
+
+#contents2 .animation2 img{
+}
+
+#contents2 .animation2 .caption h2{
+    color: white;
+    font-size: 13px;
+}
+
+#contents2 .animation2 .caption h3{
+    color: white;
+    font-size: 15px;
+}
+
+#contents1{
+    position: relative;
+}
+
+.right-box{
+    float: left;
+    width: 288px;
+    margin-left:18px;
+}
+
+.left-box{
+    float: left;
+    width: 288px;
+    margin-right:18px;
+}
+
+.content{
+    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+    overflow: hidden;
+}
+
+.content:last-child{
+  border-bottom: 0;
+}
+
+#main img{
+  float: left;
+}
+
+#main h2{
+  color: #e63c35;
+}
+
+#main p{
+  margin-bottom: 16px;
+}
+
+/*
+#main a{
+    margin-top: 16px;
+    font-size: 16px;
+    padding: 8px 32px;
+    background: #3B5998;
+    color:#f9f9f9;
+    border: 2px solid #3B5998;
+    border-radius: 5px;
+    text-decoration:none;
+    transition: 0.5s;
+}
+
+#main a:hover{
+    background: #f9f9f9;
+    color:#3B5998;
+    border: 2px solid #3B5998;
+}
+*/
+
+#main a{
+    font-size: 16px;
+    color: #3b5998;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 10px 30px;
+    margin-left: 10px;
+    position: relative;
+}
+
+#main a .edge{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none repeat scroll 0 0 #3b5998;
+    -webkit-transform: all 0.3s;
+    -ms-transform: all 0.3s;
+    -o-transform:all 0.3s ;
+    transform:all 0.3s ;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#main a .edge:active{
+    background-color: #3b5998;
+    color: #fff;
+}
+
+#main a .edge1{
+    width: 1px;
+    
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    transition-delay: 0.2s;
+}
+
+#main a .edge2{
+    height: 1px;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+#main a .edge3{
+    width: 1px;
+    left: auto;
+    right: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    transition-delay: 0.2s;
+}
+
+#main a .edge4{
+    height: 1px;
+    top: auto;
+    bottom: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+#main a:hover .edge{
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#sidebar{
+    float: left;
+    width: 280px;
+    margin: 0px 12px;
+    background: #fff;
+    padding: 8px;
+}
+
+#sidebar img{
+    margin-bottom: 16px;
+}
+
+#sidebar h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#sidebar p{
+    font-size: 16px;
+}
